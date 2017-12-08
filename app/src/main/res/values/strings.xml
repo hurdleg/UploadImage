@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Planets (CRUD)</string>
+    <string name="get_data">1. Fetch Planets</string>
+    <string name="post_data">2. Create a new Planet (Pluto)</string>
+    <string name="put_data">3. Update Pluto to hurdleg</string>
+    <string name="delete_data">4. Delete Pluto</string>
+    <string name="delete_data_bogus">5. Delete Bogus Planet</string>
+    <!-- TODO #6 - string resource for upload image menu item -->
+    <string name="post_data_binary">6. Upload Image of Pluto</string>
+</resources>
