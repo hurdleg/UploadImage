@@ -180,9 +180,9 @@ public class MainActivity extends Activity {
         // The URL is http://planets.mybluemix.net/images/noimagefound.jpg
         // set the image to relative path on web service
         pluto.setImage( "images/noimagefound.jpg" );
-        pluto.setDescription( "Pluto was stripped of plalnet status :(" );
-        pluto.setDistanceFromSun( 39.5f );
-        pluto.setNumberOfMoons( 0 );
+        pluto.setDescription( "Pluto was stripped of planet status :(" );
+        pluto.setDistanceFromSun( 39.5d );
+        pluto.setNumberOfMoons( 5 );
 
         RequestPackage requestPackage = new RequestPackage();
         requestPackage.setMethod( HttpMethod.POST );
@@ -267,14 +267,14 @@ public class MainActivity extends Activity {
         // The web service requires values for *each* property (i.e. instance variable).
         // Update existing planet Id 8 (Pluto)
         // Change the name, overview and description to: hurdleg
-        // Change the image to: pluto.jpeg
+        // Change the image to: images/pluto.jpeg (image is stored on web service)
         pluto.setPlanetId( 8 );
         pluto.setName( "hurdleg" );
         pluto.setOverview( "hurdleg" );
         pluto.setImage( "images/pluto.jpeg" );
         pluto.setDescription( "hurdleg" );
-        pluto.setDistanceFromSun( 39.5f );
-        pluto.setNumberOfMoons( 0 );
+        pluto.setDistanceFromSun( 39.5d );
+        pluto.setNumberOfMoons( 5 );
 
         RequestPackage requestPackage = new RequestPackage();
         requestPackage.setMethod( HttpMethod.PUT );
